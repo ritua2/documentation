@@ -1,0 +1,1 @@
+/var/spool/slurm/d/job01351/slurm_script: line 8: ./helloCPPcudaOut: No such file or directory
