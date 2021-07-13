@@ -1,3 +1,4 @@
+#!/bin/bash
 #SBATCH -J helloWorldC
 #SBATCH -o helloWorldC.txt    
 #SBATCH -p compute1
