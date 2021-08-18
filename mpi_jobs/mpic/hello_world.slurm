@@ -7,4 +7,4 @@
 #SBATCH -N 2
 #SBATCH -n 12
 
-mpirun -np 12 ./hello_world #the executable obtained after compiling the program
+mpirun -np 12 ./hello_world #the executable name is obtained after compiling the program
