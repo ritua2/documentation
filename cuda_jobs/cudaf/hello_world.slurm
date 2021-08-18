@@ -7,4 +7,4 @@
 #SBATCH -n 1
 #SBATCH --gres=gpu:v100:0
 
-./hello_world
+./hello_world #the executable name is obtained after compiling the program
