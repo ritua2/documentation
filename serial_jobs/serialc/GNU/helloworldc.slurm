@@ -5,4 +5,4 @@
 #SBATCH -t 00:02:00
 #SBATCH -N 1     
 #SBATCH -n 1     
-./helloCOut
+./hello_world
