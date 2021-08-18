@@ -7,4 +7,4 @@
 #SBATCH --nodes=2                      
 #SBATCH --ntasks=12                     
 
-mpirun -np 12 ./hello_world #the executable name obtained after compiling the program
+mpirun -np 12 ./hello_world #the executable name is obtained after compiling the program
