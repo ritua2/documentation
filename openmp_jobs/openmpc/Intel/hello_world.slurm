@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH -J helloWorldCOpenMPi
-#SBATCH -o helloWorldCOpenMPi.txt
+#SBATCH -J hello_world_openmpcpp
+#SBATCH -o hello_world.txt
 #SBATCH -p compute1
 #SBATCH -t 00:05:00
 #SBATCH -N 1
@@ -8,4 +8,4 @@
 
 export OMP_NUM_THREADS=4
 
-./helloCOpenMPiOut
+./hello_world
