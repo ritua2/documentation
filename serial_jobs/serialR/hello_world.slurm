@@ -6,6 +6,5 @@
 #SBATCH -N 1
 #SBATCH -n 1
 
-ml gnu8/8.3.0
-ml R/3.6.1
+ml R/4.1.0
 Rscript hello_world.r #R program_name
