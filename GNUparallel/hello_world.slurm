@@ -7,6 +7,6 @@
 #SBATCH -n 1 
 
 ml gnu8/8.3.0
-ml parallel
+ml parallel/20210622
 
 parallel --joblog mylog.txt ./hello_world {1} :::: myout.txt #the executable name is obtained after compiling the program
