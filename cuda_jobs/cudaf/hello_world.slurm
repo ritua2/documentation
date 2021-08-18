@@ -1,9 +1,10 @@
 #!/bin/sh
-#SBATCH -o helloWorldFcuda.txt
+#SBATCH -J hello_world_cudaf
+#SBATCH -o hello_world.txt
 #SBATCH -p gpu2v100
 #SBATCH -t 00:05:00
 #SBATCH -N 1
 #SBATCH -n 1
 #SBATCH --gres=gpu:v100:0
 
-./helloFcudaOut
+./hello_world
