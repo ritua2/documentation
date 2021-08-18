@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH -J program_name
-#SBATCH -o program_name.txt
+#SBATCH -J hello_world
+#SBATCH -o hellow_world.txt
 #SBATCH -p compute1
 #SBATCH -t 00:05:00
 #SBATCH -N 1
