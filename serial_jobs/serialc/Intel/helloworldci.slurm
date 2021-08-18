@@ -7,4 +7,4 @@
 #SBATCH -N 1                      # It should be 1 for all non-mpi jobs.
 #SBATCH -n 1
 
-./helloCiOut
+./hello_world
