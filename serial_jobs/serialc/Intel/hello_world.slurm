@@ -7,4 +7,4 @@
 #SBATCH -N 1                      # It should be 1 for all non-mpi jobs.
 #SBATCH -n 1
 
-./hello_world #the executable is obtained after compiling the program
+./hello_world #the executable name is obtained after compiling the program
