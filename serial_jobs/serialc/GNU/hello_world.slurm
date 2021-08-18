@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -J hello_world
+#SBATCH -J hello_world_c
 #SBATCH -o hello_world.txt    
 #SBATCH -p compute1
 #SBATCH -t 00:02:00
