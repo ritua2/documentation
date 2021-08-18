@@ -6,4 +6,4 @@
 #SBATCH -N 1
 #SBATCH -n 1
 
-python3 hello_world.py #program_name
+python3 hello_world.py #Python program_name
