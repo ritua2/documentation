@@ -6,4 +6,4 @@
 #SBATCH -N 1
 #SBATCH -n 1
 
-./hello_world #the executable obtained after compiling the program
+./hello_world #the executable name is obtained after compiling the program
