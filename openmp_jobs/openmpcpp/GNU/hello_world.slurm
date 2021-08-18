@@ -8,4 +8,4 @@
 #SBATCH -n 4
 export OMP_NUM_THREADS=4
 
-./hello_world #the executable obtained after compiling the program
+./hello_world #the executable name is obtained after compiling the program
