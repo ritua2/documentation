@@ -8,4 +8,4 @@
 
 export OMP_NUM_THREADS=4
 
-./hello_world
+./hello_world #the executable obtained after compiling the program
