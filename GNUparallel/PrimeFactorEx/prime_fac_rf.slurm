@@ -4,7 +4,7 @@
 #SBATCH -p compute1  
 #SBATCH -t 00:05:00  
 #SBATCH -N 1  
-#SBATCH -n 1  
+#SBATCH -n 20  
   
 ml gcc/11.2.0  
 ml parallel/20210722  
