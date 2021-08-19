@@ -4,7 +4,7 @@
 #SBATCH -p compute1
 #SBATCH -t 00:02:00
 #SBATCH -N 1
-#SBATCH -n 2
+#SBATCH -n 5
 
 ./hello_world 1 &
 ./hello_world 2 &
