@@ -4,7 +4,7 @@
 #SBATCH -p gpudev
 #SBATCH -t 00:05:00
 #SBATCH -N 1
-#SBATCH -n 1 
+#SBATCH -n 20 
 
 ml gnu8/8.3.0
 ml parallel/20210622
