@@ -10,4 +10,4 @@
 ./hello_world 2 &
 ./hello_world 3 &
 ./hello_world 4 &
-./hello_world 5  #the executable name is obtained after compiling the program
+./hello_world 5  #executable corresponds to code in Listing 30
