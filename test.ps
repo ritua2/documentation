@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH --job-name=namd # Change to your job name
+#SBATCH --partition=compute1
+#SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --time=00:10:00
+
+module load namd/2.14-multicore
+namd2 +p80  apoa1.namd
+ 
