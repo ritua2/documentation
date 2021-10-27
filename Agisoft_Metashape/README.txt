@@ -13,5 +13,5 @@ The following steps were used to test Agisoft Metashape:
 4.  Load the Metashape module:
     $ module load metashapre-pro/1.7.3
     
-4.  Run Agisoft Metashape:
+5.  Run Agisoft Metashape:
     $ metashape.sh
