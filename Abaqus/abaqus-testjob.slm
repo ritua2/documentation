@@ -1,0 +1,62 @@
+#!/bin/bash 
+#SBATCH -J myabaqusjob
+#SBATCH -t 01:00:00
+#SBATCH -N 1
+#SBATCH -n 4
+#SBATCH -o myabaqusjob.o%j
+#SBATCH -p testing
+#SBATCH --account=testing
+
+# SBATCH Parameters:
+# -J = Job Name
+# -t = Limit on run time
+# -N = Minimum number of nodes
+# -n = Maximum number of tasks
+# -o = Stdout/stderr directed to this file, %j is the SLURM Job ID
+# -p = Partition
+# --account = account
+
+module load abaqus/2020
+
+# Set this to the correct environment file
+# for the test we will use some reasonable defaults
+abaqus_environment_file=abaqus_v6.env
+
+# Figure out what nodes this job should run on
+node_list=$(scontrol show hostname $cores_per_node | sort | uniq)
+
+# This assumes that there will be an even number of tasks across
+# each node, if you have configured your job to run with different
+# numbers of tasks on each node, you will need to change the task
+# calculations below and create a modified mp_host_list.
+cores_per_node=$(echo $SLURM_TASKS_PER_NODE | grep -oP '^[^0-9]*\K[0-9]+')
+
+# Make node list and count the number of nodes
+core_count=0
+mp_host_list="["
+
+for i in  ${node_list} ; do
+	mp_host_list="${mp_host_list}['$i', ${cores_per_node}],"
+	number_of_nodes=$((number_of_nodes + 1))
+done
+
+echo $mp_host_list
+
+# Calculate the amount of cores per node and multiply it by the amount
+# of nodes we are running on
+core_count=$(($number_of_nodes*$cores_per_node))
+echo "Running on nodes: $cores_per_node"
+echo "Running on $cores_per_node cores per node for a total of $core_count processes"
+
+mp_host_list=`echo ${mp_host_list} | sed -e "s/,$//"`
+mp_host_list="${mp_host_list}]"
+
+echo "mp_host_list=${mp_host_list}"  >> $abaqus_environment_file
+
+unset SLURM_GTIDS
+
+abaqus job=test_abaqus_job cpus=$core_count \
+	input=./knee_bolster.inp -verbose 3 mp_mode=mpi \
+	standard_parallel=all interactive scratch="."
+
+sed -i "/mp_host_list/d" $abaqus_environment_file
