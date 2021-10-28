@@ -1,5 +1,5 @@
 Follow the steps below to test the LAMMPS application:
-(These steps are meant to be preformed on a login node)
+(These steps are meant to be performed on a login node)
 
 $ export LAMMPS_WORKDIR=/work/abc123/opt/lammps/lammps-test   (Just a suggestion for the path)
 $ mkdir -p $LAMMPS_WORKDIR/examples
