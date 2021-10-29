@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH --job-name=namd # Change to your job name
+#SBATCH --partition=compute1
+#SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --time=01:00:00
+
+module load autodock
+autodock4 -p 1dwd_1dwd.dpf -l 1dwd_1dwd.dlg
