@@ -8,3 +8,5 @@ autodock4 -p 1dwd_1dwd.dpf -l 1dwd_1dwd.dlg
 
 
 Or, submit a batch job with the job script test.ps 
+
+The results are saved in 1dwd_1dwd.dlg
