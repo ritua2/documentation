@@ -55,4 +55,4 @@ These steps were used to test jpeglib:
     -rw-rw---- 1 ftk939 arcadmins 2168992 Nov  4 18:28 output.ppm
     $
     
-    That's it!
+ That's it!
