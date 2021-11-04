@@ -7,9 +7,17 @@ $ cp -r /apps/opensees/3.3.0/openmpi/source/OpenSees/EXAMPLES/ .
 load the OpenSees module:
 module load opensees
 
-To Test the standard version:
+To test the standard version:
 cd DeveloperTestScripts and run following command:
 
 OpenSees runAll.tcl
 Or use the test.ps to submit a batch job on a login node:
 sbatch test.ps
+
+To test the MP version:
+cd cd SmallMP
+run the following command:
+mpirun -n 5 OpenSeesMP Example.tcl
+
+Or use the job script test-mp.ps to submit a batch job on a login node:
+sbatch test-mp.ps
