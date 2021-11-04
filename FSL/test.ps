@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH --job-name=namd # Change to your job name
+#SBATCH --partition=compute1
+#SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --time=02:00:00
+
+module load fsl
+fast t1.nii.gz
+
