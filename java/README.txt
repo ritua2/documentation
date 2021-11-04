@@ -1,6 +1,7 @@
-Java is installed on locally on each login and compute node.
+Java is installed locally on each login and compute node.
 
 To verify the installation:
+
 $ java -version
 Picked up JAVA_TOOL_OPTIONS: -Xms2G -Xmx2G
 openjdk version "1.8.0_292"
