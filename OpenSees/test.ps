@@ -1,0 +1,10 @@
+#!/bin/bash -l
+#SBATCH --job-name=project-name # Change to your job name
+#SBATCH --partition=compute1
+#SBATCH --ntasks=1
+#SBSTVH -–nodes=1
+#SBATCH --time=00:10:00
+
+
+module load opensees
+OpenSees runAll.tcl
