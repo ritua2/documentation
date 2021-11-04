@@ -2,7 +2,7 @@ These steps were used to test mvapich2:
 
 1.  module load mvapich2/2.3.6-gcc_10.3.0
 
-2.  Download the file mvapich2-2.3.6-examples.tgz and extract it in your Arc work directory.
+2.  Download the file mvapich2-2.3.6-examples.tgz and extract it in your Arc work directory.  The "examples" directory was taken from the mvapich2 source tar file.
 
 3.  cd into the "examples" directory and compile and run cpi:
     $ cd examples
