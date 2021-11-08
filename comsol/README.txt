@@ -1,4 +1,4 @@
-comsol is an application with GUI. Following the steps to test the app:
+COMSOL is a cross-platform finite element analysis, solver and multiphysics simulation software with GUI. Following the steps to test the app:
 log onto Arc, make sure with -X 
 ssh -X abc123@arc.utsa.edu
 log onto a computer node, make sure with --x11:
