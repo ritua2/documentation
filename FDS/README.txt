@@ -15,4 +15,12 @@ in the same directory after runnning the fds program, type in teh following comm
 $ smokeview create_remove
 
 
-Note, smokeview work well with MobaXterm on Windows. For Mac, make sure to install the most update XQuatz
+Note, smokeview work well with MobaXterm on Windows. For Mac, make sure to install the most update XQuatz.
+Older XQuatz can result in errors like
+
+X Error of failed request:  BadValue (integer parameter out of range for operation)
+
+or 
+X Error of failed request:  GLXBadContext
+  Major opcode of failed request:  149 (GLX)
+
