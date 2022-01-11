@@ -1,0 +1,37 @@
+OOMD-blue 2.9.6 DOUBLE HPMC_MIXED SSE SSE2 
+Compiled: 07/05/2021
+Copyright (c) 2009-2019 The Regents of the University of Michigan.
+-----
+You are using HOOMD-blue. Please cite the following:
+* J A Anderson, J Glaser, and S C Glotzer. "HOOMD-blue: A Python package for
+  high-performance molecular dynamics and hard particle Monte Carlo
+  simulations", Computational Materials Science 173 (2020) 109363
+-----
+HOOMD-blue is running on the CPU
+test.py:006  |  hoomd.init.create_lattice(unitcell=hoomd.lattice.sc(a=2.0, type_name='A'), n=10)
+test.py:006  |  hoomd.init.create_lattice(unitcell=hoomd.lattice.sc(a=2.0, type_name='A'), n=10)
+notice(2): Group "all" created containing 1000 particles
+test.py:009  |  nl = md.nlist.cell()
+test.py:010  |  lj = md.pair.lj(r_cut=3.0, nlist=nl)
+test.py:011  |  lj.pair_coeff.set('A', 'A', epsilon=1.0, sigma=1.0)
+test.py:014  |  md.integrate.mode_standard(dt=0.005)
+test.py:015  |  hoomd.md.integrate.langevin(group=hoomd.group.all(), kT=1.2, seed=4)
+test.py:015  |  hoomd.md.integrate.langevin(group=hoomd.group.all(), kT=1.2, seed=4)
+notice(2): integrate.langevin/bd is using specified gamma values
+test.py:018  |  hoomd.run(10e3)
+notice(2): -- Neighborlist exclusion statistics -- :
+notice(2): Particles with 0 exclusions             : 1000
+notice(2): Neighbors included by diameter          : no
+notice(2): Neighbors excluded when in the same body: no
+** starting run **
+Time 00:00:05 | Step 10000 / 10000 | TPS 1931.36 | ETA 00:00:00
+Average TPS: 1931.32
+---------
+-- Neighborlist stats:
+1016 normal updates / 100 forced updates / 0 dangerous updates
+n_neigh_min: 0 / n_neigh_max: 33 / n_neigh_avg: 10.917
+shortest rebuild period: 7
+-- Cell list stats:
+Dimension: 5, 5, 5
+n_min    : 2 / n_max: 16 / n_avg: 8
+** run complete **
