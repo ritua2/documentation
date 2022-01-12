@@ -1,0 +1,143 @@
+BLASTN 2.11.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: User specified sequence set (Input: sample1.fasta).
+           3 sequences; 106 total letters
+
+
+
+Query= Sequence3a
+
+Length=251
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 19926
+
+
+Query= Sequence3b
+
+Length=247
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 19598
+
+
+Query= Sequence3c
+
+Length=189
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 14842
+
+
+Query= Sequence3d
+
+Length=192
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+Sequence1b                                                            73.1    1e-18
+Sequence1c                                                            67.6    7e-17
+
+
+> Sequence1b
+Length=40
+
+ Score = 73.1 bits (39),  Expect = 1e-18
+ Identities = 39/39 (100%), Gaps = 0/39 (0%)
+ Strand=Plus/Plus
+
+Query  152  ATCACGAGCTTAATTACCATGCCGCGTGAAACCAGCAAC  190
+            |||||||||||||||||||||||||||||||||||||||
+Sbjct  1    ATCACGAGCTTAATTACCATGCCGCGTGAAACCAGCAAC  39
+
+
+> Sequence1c
+Length=36
+
+ Score = 67.6 bits (36),  Expect = 7e-17
+ Identities = 36/36 (100%), Gaps = 0/36 (0%)
+ Strand=Plus/Plus
+
+Query  45  ATGGACTAATGGCTAATCAGCCCATGCTCACACATA  80
+           ||||||||||||||||||||||||||||||||||||
+Sbjct  1   ATGGACTAATGGCTAATCAGCCCATGCTCACACATA  36
+
+
+ Score = 67.6 bits (36),  Expect = 7e-17
+ Identities = 36/36 (100%), Gaps = 0/36 (0%)
+ Strand=Plus/Plus
+
+Query  81   ATGGACTAATGGCTAATCAGCCCATGCTCACACATA  116
+            ||||||||||||||||||||||||||||||||||||
+Sbjct  1    ATGGACTAATGGCTAATCAGCCCATGCTCACACATA  36
+
+
+ Score = 67.6 bits (36),  Expect = 7e-17
+ Identities = 36/36 (100%), Gaps = 0/36 (0%)
+ Strand=Plus/Plus
+
+Query  117  ATGGACTAATGGCTAATCAGCCCATGCTCACACATA  152
+            ||||||||||||||||||||||||||||||||||||
+Sbjct  1    ATGGACTAATGGCTAATCAGCCCATGCTCACACATA  36
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 15088
+
+
+  Database: User specified sequence set (Input: sample1.fasta).
+    Posted date:  Unknown
+  Number of letters in database: 106
+  Number of sequences in database:  3
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5
