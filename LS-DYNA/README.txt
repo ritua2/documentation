@@ -5,7 +5,7 @@ $ unzip ICFD_example_cylinderflow.zip
 
 Test interactively:
 $ module load ls-dyna
-$ ls-dyna_smp_d_r1010_x64_redhat5_ifort160 i=input.k ncpu=30
+$ ls-dyna_smp_d_r1010_x64_redhat5_ifort160 i=i.k ncpu=30
 
 Test batch:
 Use the job script test.ps to submit a batch job on a login node of Arc:
