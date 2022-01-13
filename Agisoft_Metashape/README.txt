@@ -45,7 +45,7 @@ The following steps can be used to test Agisoft Metashape via the command line:
     RAM: 187.2 GB
     LoadProject: path = monument/monument.psz
     loaded project in 0.752272 sec
-    Success: Able to confirm chunk keys from sample project.
+    Success: Able to confirm chunk label from sample project.
 
     If the test was not successful, the final output line would read:
-    Error: Unable to confirm chunk keys from sample project.
+    Error: Unable to confirm chunk label from sample project.
