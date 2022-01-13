@@ -20,6 +20,7 @@ The following steps can be used to test Agisoft Metashape via the command line:
     $ cd /work/<abc123>
     $ mkdir metashape-test; cd metashape-test
     $ cp /apps/metashape/1.7.3/examples/monument.zip .
+    $ unzip monument.zip
 
 2.  Download the metashape-test.py Python script.
 
