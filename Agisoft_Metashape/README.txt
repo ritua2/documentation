@@ -15,8 +15,11 @@ The following steps were used to test Agisoft Metashape via the GUI:
 
 The following steps can be used to test Agisoft Metashape via the command line:
 
-1.  Download the attached Metashape project zip file (monument.zip) to your 
-    working directory on Arc and unzip the file.
+1.  Copy the Metashape project zip file (monument.zip) to your working directory 
+    and unzip the file.
+    $ cd /work/<abc123>
+    $ mkdir metashape-test; cd metashape-test
+    $ cp /apps/metashape/1.7.3/examples/monument.zip .
 
 2.  Download the metashape-test.py Python script.
 
