@@ -15,7 +15,7 @@ The following steps were used to test Agisoft Metashape via the GUI:
 
 The following steps can be used to test Agisoft Metashape via the command line:
 
-1.  Copy the Metashape project zip file (monument.zip) to your working directory 
+1.  Copy the Metashape project zip file exmaple (monument.zip) to your working directory 
     and unzip the file.
     $ cd /work/<abc123>
     $ mkdir metashape-test; cd metashape-test
