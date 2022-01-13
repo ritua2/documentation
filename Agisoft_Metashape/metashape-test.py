@@ -12,8 +12,8 @@ doc.open(path = args['file'])
 chunk = doc.chunk
 
 if label == doc.chunks[0].label:
-  print("Success: Able to confirm chunk keys from sample project.")
+  print("Success: Able to confirm chunk label from sample project.")
 else:
-  print("Error: Unable to confirm chunk keys from sample project.")
+  print("Error: Unable to confirm chunk label from sample project.")
 
 doc.clear()
