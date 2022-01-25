@@ -30,3 +30,7 @@ $ gcc -o test test.c -lopenblas
 /usr/bin/ld: cannot find -lopenblas
 collect2: error: ld returned 1 exit status
 $
+
+Note: 
+The test above was taken from here: https://gist.github.com/xianyi/5780018
+It was referenced from this page: https://github.com/xianyi/OpenBLAS/wiki/User-Manual#link-the-library
