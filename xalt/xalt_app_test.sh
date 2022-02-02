@@ -16,7 +16,7 @@ fi
 
 if [ "$WORKING" -eq "1" ]
 then
-   echo "XALT operation test: successful."
+   echo "XALT operation test: successful"
 else
    echo "Cannot confirm XALT operation."
 fi
