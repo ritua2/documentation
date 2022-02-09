@@ -54,5 +54,7 @@ These steps were used to test jpeglib:
     $ ls -laF output.ppm
     -rw-rw---- 1 ftk939 arcadmins 2168992 Nov  4 18:28 output.ppm
     $
+  7. Simply run cjpegto compress a gif file to a jpg file:
+    $ cjpeg -outfile test.jpg test.gif
     
  That's it!
