@@ -1,7 +1,7 @@
 The following steps can be used to test harminv:
 https://github.com/NanoComp/harminv
 
-1.  From a login node on arc, load the harminv module:
+1.  From a login node on Arc, load the harminv module:
     
     $ module load harminv/1.4.1
     
