@@ -5,11 +5,18 @@ https://github.com/NanoComp/harminv
     
     $ module load harminv/1.4.1
     
-2.  Download the sines-output.txt file.  This output was generated from the sines program that is included in the harminv gitub repository.  It generates a signal consisting of a sum of decaying sinuoids with specified complex frequencies. Using the example provided in the URL above, the sines-output.txt file was generated from the command: 
+2.  Download the sines-output.txt file.  This output was generated from 
+    the sines program that is included in the harminv gitub repository.  
+    It generates a signal consisting of a sum of decaying sinuoids with 
+    specified complex frequencies. Using the example provided in the URL 
+    above, the sines-output.txt file was generated from the command: 
 
     $ sines 0.1+0.01i 0.08+0.001i
 
-This command generates 10000 data points consisting of a signal with complex frequencies 0.1+0.01i and 0.08+0.001i, with amplitudes 1 and 2 respectively, sampled at time intervals dt=1.0. This file will be used as input to harminv.  
+    This command generates 10000 data points consisting of a signal with 
+    complex frequencies 0.1+0.01i and 0.08+0.001i, with amplitudes 1 and 2 
+    respectively, sampled at time intervals dt=1.0. This file will be used 
+    as input to harminv.  
 
 3.  Execute the harminv command:
 
