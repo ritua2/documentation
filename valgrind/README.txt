@@ -4,7 +4,7 @@ To test the app, compile the test.c
 $ gcc test.c
 The load the valgrind module:
 $ module load valgrind
-$ valgrind --leak-check=yes ./a.out
+$ valgrind -s --leak-check=yes --leak-check=full --show-leak-kinds=all ./a.out
 
 The output should look like following:
 ==132282== 1 errors in context 1 of 39:
