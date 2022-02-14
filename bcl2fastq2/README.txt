@@ -9,7 +9,7 @@ Load the module with the following command:
      module load bcl2fastq2/2.20
 
 Call the command on a bcl file like this:
-     bcl2fastq2 <BCL file>
+     bcl2fastq <BCL file>
 
 Your output will be a directory with sorted reads.
 
