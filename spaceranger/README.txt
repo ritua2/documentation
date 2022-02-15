@@ -1,7 +1,7 @@
 To use spaceranger you must migrate to a compute node and load the modules spaceranger and bcl2fastq
 with the following command:
 
-   module load spaceranger bcl2fastq
+   module load spaceranger
 
 After you've done this you need to source the space ranger env with the command:
 
