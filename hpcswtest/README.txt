@@ -8,6 +8,7 @@ $ module load hpcswtest
 
 - run the testing program"
 $ hpcswtest
+The program will copy the test-cases/ from the /apps/hpcswtest to current directory. Do not change HPCSWTEST_BASE_DIR as it is set by the module to /apps/hpcswtest. 
 
 - generate the report:
 $ hpcswtest_report.py
