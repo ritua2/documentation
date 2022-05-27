@@ -6,6 +6,7 @@ To use the framework, follow the instructions below:
 - load the module
 $ module load hpcswtest
 
+the prpgram will submit all test jobs to $HPCSWTEST_QUEUE which is set to "compute1". To test other partitions, change the value of HPCSWTEST_QUEUE.
 - run the testing program"
 $ hpcswtest
 The program will copy the test-cases/ from the /apps/hpcswtest to current directory. Do not change HPCSWTEST_BASE_DIR as it is set by the module to /apps/hpcswtest. 
